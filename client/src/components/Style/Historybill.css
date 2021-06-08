@@ -1,0 +1,17 @@
+.profile-btn3 {
+  margin-top: 10px;
+  margin-left: 1230px;
+  outline: auto;
+  background-color: rgb(148, 18, 18);
+  outline-color: black;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  width: 15%;
+  font-weight: 400;
+  margin-top: 30px;
+}
+
+.profile-btn1:hover {
+  background: rgb(114, 36, 36);
+  color: white;
+}

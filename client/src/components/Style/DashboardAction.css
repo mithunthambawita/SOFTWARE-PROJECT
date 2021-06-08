@@ -1,0 +1,107 @@
+
+* {
+
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+.dash-action{
+  outline:10px;
+
+}
+.link-btn-view-profile {
+  outline: auto;
+  background-color: rgb(148, 18, 18);
+  outline-color: black;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  width: 25%;
+  font-weight: 400;
+  margin-top: 30px;
+}
+
+
+.link-btn-edit-profile {
+  outline: auto;
+  background-color: rgb(148, 18, 18);
+  outline-color: black;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  width: 25%;
+  font-weight: 400;
+  margin-top: 30px;
+}
+
+.link-btn-edit-account {
+  outline: auto;
+  background-color: rgb(148, 18, 18);
+  outline-color: black;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  width: 25%;
+  font-weight: 400;
+  margin-top: 30px;  
+}
+
+.link-btn-view-history {
+  outline: auto;
+  background-color: rgb(148, 18, 18);
+  outline-color: black;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  width: 25%;
+  font-weight: 400;
+  margin-top: 30px;
+}
+
+.link-btn-Delete-account {
+  outline: auto;
+  background-color: rgb(148, 18, 18);
+  outline-color: black;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  width: 25%;
+  font-weight: 400;
+  margin-top: 30px;  
+}
+
+
+ .link {
+ 
+  color: rgb(0, 0, 0);
+
+}
+.link-btn-view-profile:hover{
+  background:    rgb(114, 36, 36);
+  color:  white;
+} 
+
+.link:hover{
+ 
+  color:  white;
+} 
+.link-btn-edit-profile:hover{
+  background:    rgb(114, 36, 36);
+  color:  white;
+} 
+
+.link-btn-edit-account:hover{
+  background:    rgb(114, 36, 36);
+  color:  white;
+} 
+
+.link-btn-view-history:hover{
+  background:    rgb(114, 36, 36);
+  color:  white;
+} 
+
+.link-btn-Delete-account:hover{
+  background:    rgb(114, 36, 36);
+  color:  white;
+} 
+
+.dash-action {
+  margin: 10px 20px 40px 20px; 
+}

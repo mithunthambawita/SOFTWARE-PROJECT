@@ -1,0 +1,91 @@
+
+.Db-container{
+  background-image: url('../../components/images/img-14.jpg');
+  background-repeat: no-repeat;
+  min-height: 700px;
+  display: flex;
+  padding: 25px 35px 10px 35px;
+  justify-content: center; 
+  flex-wrap: wrap;
+}
+
+.D-container{
+  min-height: 50vh;
+  outline-style: auto;
+  width: 60%;
+  background: rgba(68, 63, 63, 0.411);
+  text-align: center;
+  padding: 25px 35px 10px 35px;
+  box-shadow: 0 6px 20px rgba(134, 134, 134, 0.308);
+  -webkit-filter: drop-shadow(10px 6px 20px rgba(134, 134, 134, 0.274));
+  filter: drop-shadow(10px 6px 20px rgba(128, 128, 128, 0.281));
+}
+
+.D-container header{
+  outline-style: auto;
+  font-size: 35px;
+  font-weight: 600;
+  margin: 0 0 30px 0;
+  box-shadow: 0 6px 20px rgba(134, 134, 134, 0.308);
+  -webkit-filter: drop-shadow(10px 6px 20px rgba(134, 134, 134, 0.274));
+  filter: drop-shadow(10px 6px 20px rgba(128, 128, 128, 0.281));
+  
+}
+
+.D-container p{
+  text-align: left;
+  margin-top: 10px;
+}
+
+.D-container  .link-btn{
+  outline:auto;
+  outline-color: black;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  width: 25%;
+  background-color: cadetblue;
+  font-weight: 550;
+  margin: 10px 0 0 0;
+}
+
+.D-field{
+  margin-top: 6px;
+  margin-left: 200px;
+
+}
+
+ .D-field button{
+  /* outline: auto;
+  outline-color:brown; */
+  width: 400px;
+  height:100px;
+  /* background: rgba(12, 9, 9, 0.658); */
+  background:linear-gradient(180deg,rgb(216, 121, 121) 0%, rgb(230, 187, 187) 100%);
+  border-radius: 20px;
+  color: rgb(20, 18, 18);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing:1px;
+  text-transform: uppercase;
+  cursor:pointer;
+  transition: 0.3s ease-in;
+  
+}
+
+.D-field button:hover{
+  background: rgb(22, 22, 22);
+  color:  white;
+}
+
+.nopro-field{
+  margin-left: 100px;
+  font-size: 25px;
+  font-weight: 1000;
+  color: 'red',
+}
+
+
+
+
+
+

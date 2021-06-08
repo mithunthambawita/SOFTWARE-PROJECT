@@ -1,0 +1,182 @@
+*{
+  
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+}
+
+.main-container{
+    background-image:url('../../components/images/img-14.jpg');
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.main-container::after {
+
+    content: "";
+    opacity: 0.8;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    height: 100%;
+    /* also change the blend mode to what suits you, from darken, to other 
+    many options as you deem fit*/
+    background-size: cover;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: -1;
+    height: 500px;
+}
+
+.container1{
+    align-self: left;
+    outline-style: auto;
+    shape-outside: -moz-radial-gradient(5px);
+    width: 350px;
+    height: 450px;
+    border-radius: 8px;
+    /* background: rgba(80, 76, 76, 0.411); */
+    text-align: center;
+    padding: 50px 35px 10px 35px;
+    box-shadow: 0 6px 20px rgba(59, 52, 52, 0.521);
+    -webkit-filter: drop-shadow(10px 6px 20px rgba(134, 134, 134, 0.274));
+    filter: drop-shadow(10px 6px 20px rgba(128, 128, 128, 0.281));
+}
+
+.container2{
+    align-self: left;
+    outline-style: auto;
+    shape-outside: -moz-radial-gradient(5px);
+    width: 450px;
+    height: 450px;
+    border-radius: 8px;
+    text-align: center;
+    padding: 50px 35px 10px 35px;
+    box-shadow: 0 6px 20px rgba(59, 52, 52, 0.521);
+    -webkit-filter: drop-shadow(10px 6px 20px rgba(134, 134, 134, 0.274));
+    filter: drop-shadow(10px 6px 20px rgba(128, 128, 128, 0.281));
+}
+
+.container3{
+    align-self: left;
+    outline-style: auto;
+    shape-outside: -moz-radial-gradient(5px);
+    width: 400px;
+    height: 450px;
+    border-radius: 8px;    
+    background: rgba(80, 76, 76, 0.411);
+    text-align: center;
+    padding: 50px 35px 10px 35px;
+    box-shadow: 0 6px 20px rgba(59, 52, 52, 0.521);
+    -webkit-filter: drop-shadow(10px 6px 20px rgba(134, 134, 134, 0.274));
+    filter: drop-shadow(10px 6px 20px rgba(128, 128, 128, 0.281));
+}
+
+
+
+/* .container1 .image{
+    
+    align-self: left;
+} */
+
+.container1 .button{
+    width:80%;
+    margin: 300px 30px 90px;
+    height: 5%;
+    border: none;
+    background: rgba(134, 10, 10, 0.829);
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing:1px;
+    text-transform: uppercase;
+    cursor:pointer;
+    transition: 0.3s ease-in;
+}
+
+.container2 .field{
+    text-align: left;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.container2 .form{
+    height: 80%;
+    width: 100%;
+    border: 2px solid rgba(73, 28, 34, 0.938);
+    background-color: whitesmoke;
+    border-radius: 15px;
+    font-size: 18px;
+    padding-left: 15px;
+    transition: border-color 0.3s ease;
+
+}
+
+.container2 .form1{
+    height: 80%;
+    width: 100%;
+    border: 2px solid rgba(73, 28, 34, 0.938);
+    background-color: whitesmoke;
+    border-radius: 15px;
+    font-size: 18px;
+    padding-left: 15px;
+    transition: border-color 0.3s ease;
+
+
+}
+
+.container3 .field{
+    text-align: left;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.container3.label{ 
+    height: 100%;
+    width: 100%;
+    border: 1px solid rgb(25, 83, 138);
+    border-radius: 15px;
+    font-size: 18px;
+    padding-left: 15px;
+    transition: border-color 0.3s ease;
+}
+
+.container3 .payment{
+    width:80%;
+    margin: 240px 50px 30px;
+    height: 5%;
+    border: none;
+    background: rgba(134, 10, 10, 0.829);
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing:1px;
+    text-transform: uppercase;
+    cursor:pointer;
+    transition: 0.3s ease-in;
+}
+
+.container3 .payment-cancel{
+    width:80%;
+    margin: 0px 50px 30px;
+    height: 5%;
+    border: none;
+    background: rgba(134, 10, 10, 0.829);
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing:1px;
+    text-transform: uppercase;
+    cursor:pointer;
+    transition: 0.3s ease-in;
+}
+
+

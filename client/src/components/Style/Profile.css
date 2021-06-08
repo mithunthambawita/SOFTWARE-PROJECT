@@ -1,0 +1,106 @@
+.p-container{
+  margin-top: 50px;
+  margin-left: 190px;
+}
+
+/* .pcontainer{
+  margin-top: 40px;
+  margin-left: 240px;
+  outline-style: auto;
+  shape-outside: -moz-radial-gradient(5px);
+  width: 700px;
+  height: 450px;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(59, 52, 52, 0.521);
+  -webkit-filter: drop-shadow(10px 6px 20px rgba(134, 134, 134, 0.274));
+  filter: drop-shadow(10px 6px 20px rgba(128, 128, 128, 0.281));
+  line-height: 50px;
+  
+} */
+
+.pcontainer1{
+  margin-top: 40px;
+  margin-left: 200px;
+  /* outline-style: auto; */
+  shape-outside: -moz-radial-gradient(5px);
+  width: 500px;
+  height: 450px;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(59, 52, 52, 0.521);
+  -webkit-filter: drop-shadow(10px 6px 20px rgba(134, 134, 134, 0.274));
+  filter: drop-shadow(10px 6px 20px rgba(128, 128, 128, 0.281));
+  line-height: 50px;
+  padding: 40px 35px 40px 35px;
+  text-align: center;
+
+}
+
+.pcontainer2{
+  margin-top: -450px;
+  margin-left: 950px;
+  shape-outside: -moz-radial-gradient(5px);
+  width: 200px;
+  height: 450px;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(59, 52, 52, 0.521);
+  -webkit-filter: drop-shadow(10px 6px 20px rgba(134, 134, 134, 0.274));
+  filter: drop-shadow(10px 6px 20px rgba(128, 128, 128, 0.281));
+  line-height: 50px;
+  padding: 40px 35px 40px 35px;
+  text-align: left;
+}
+
+.field-name{
+  margin-top: 10px;
+  outline: auto;
+  box-shadow: 0 6px 20px rgba(59, 52, 52, 0.521);
+  -webkit-filter: drop-shadow(10px 6px 20px rgba(134, 134, 134, 0.274));
+  filter: drop-shadow(10px 6px 20px rgba(128, 128, 128, 0.281));
+}
+
+/* .profile-btn1 {
+  margin-top: 10px;
+  margin-left:750px;
+  outline: auto;
+  background-color: rgb(148, 18, 18);
+  outline-color: black;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  width: 15%;
+  font-weight: 400;
+  margin-top: 30px;  
+} */
+
+/* .profile-btn1:hover{
+  background:    rgb(114, 36, 36);
+  color:  white;
+}  */
+
+.profile-btn2 {
+  outline: auto;
+  background:linear-gradient(180deg,rgb(161, 74, 74) 0%, rgb(230, 187, 187) 100%);
+  outline-color: black;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  width:15%;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 30px;
+  margin-left: 950px;
+  padding-top: 15px;
+  padding-left: 10px;
+}
+
+.link {
+
+  color: rgb(0, 0, 0);
+
+}
+
+.profile-btn2:hover{
+background:linear-gradient(180deg,rgb(160, 75, 75) 0%, rgb(230, 187, 187) 100%);
+color:  white;
+} 
+

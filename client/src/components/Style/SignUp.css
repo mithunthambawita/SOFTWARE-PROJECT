@@ -1,0 +1,185 @@
+*{
+  
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+}
+
+.m-container{
+    background-image: url('../../components/images/img-14.jpg');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.m-container::after {
+    content: "";
+    opacity: 0.8;
+    /*background: url('../images/img-12.jpg') no-repeat fixed top;*/
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    height: 100%;
+    /* also change the blend mode to what suits you, from darken, to other 
+    many options as you deem fit*/
+    background-size: cover;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: -1;
+    height: 500px;
+}
+
+.container{
+    outline-style: auto;
+    shape-outside: -moz-radial-gradient(5px);
+    width: 600px;
+    background: rgba(80, 76, 76, 0.411);
+    border-radius: 8px;
+    text-align: center;
+    padding: 50px 35px 10px 35px;
+    box-shadow: 0 6px 20px rgba(59, 52, 52, 0.521);
+    -webkit-filter: drop-shadow(10px 6px 20px rgba(134, 134, 134, 0.274));
+    filter: drop-shadow(10px 6px 20px rgba(128, 128, 128, 0.281));
+    
+}
+
+.container header{
+    outline-style: auto;
+    shape-outside: -moz-radial-gradient(5px);
+    font-size: 35px;
+    font-weight: 800;
+    margin: 0 0 30px 0;
+    box-shadow: 0 6px 20px rgba(27, 27, 27, 0.726);
+    -webkit-filter: drop-shadow(10px 6px 20px rgba(134, 134, 134, 0.274));
+    filter: drop-shadow(10px 6px 20px rgba(128, 128, 128, 0.281));
+    
+}
+
+.container .form-outer{
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+.form-outer form{
+    display: flex;
+    width: 500%;
+}
+
+.form-outer form .page{
+    width: 30%;
+}
+
+.form-outer form .page .title{
+    text-align: left;
+    font-size: 25px;
+    font-weight: 500;
+
+}
+
+.form-outer form .page .field{
+    height: 45px;
+    width: 525px;
+    margin: 40px 0;
+    position: relative;
+    margin-bottom: 10px;
+    font-size: 17px;
+    
+}
+
+.form-outer form .page .field .label{ 
+    position: absolute;
+    pointer-events: none;
+    left: 12px;
+    top: calc(40% + 5px);
+    transform: translateY(-50%);
+    color: #aaa;
+    transition:top 0.3s ease,font-size 0.3s ease,color 0.3s ease ;
+}
+
+.form-outer form .page .field input{
+    height: 100%;
+    width: 100%;
+    border: 1px solid rgb(25, 83, 138);
+    border-radius: 5px;
+    font-size: 18px;
+    padding-left: 15px;
+    transition: border-color 0.3s ease;
+}
+
+.form-outer form .page .field TextField{
+    height: 100%;
+    width: 100%;
+    border: 1px solid rgb(25, 83, 138);
+    border-radius: 5px;
+    font-size: 18px;
+    padding-left: 15px;
+    transition: border-color 0.3s ease;
+}
+
+.form-outer form .page .field  .drop-down{
+    position: absolute;
+    left: 12px;
+    top: calc(40% + 5px);
+    transform: translateY(-50%);
+    color: #aaa;
+    transition:top 0.3s ease,font-size 0.3s ease,color 0.3s ease ;
+}
+
+.form-outer form .page .field input:valid+.label,
+.form-outer form .page .field input:focus+.label{
+    top: -6px;
+    font-size: 13px;
+    color: rgb(51, 58, 116);
+}
+
+
+form .page .field select{
+    width: 100%;
+    height: 45px;
+    padding-left: 10px;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 5px;
+    border: 1px solid rgb(25, 83, 138);
+}
+
+.form-outer form .page .field button{
+    width:25%;
+    margin: 0 50px 30px;
+    height: calc(75% + 2px);
+    border: none;
+    background: rgba(46, 38, 38, 0.658);
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing:1px;
+    text-transform: uppercase;
+    cursor:pointer;
+    transition: 0.3s ease-in;
+}
+
+
+
+.form-outer form .page .field button:hover{
+    background: rgb(34, 32, 32);
+    color: rgb(255, 255, 255);
+}
+
+.form-outer form .page .btns button{
+    margin-top: -20px!important;
+}
+
+form .page .btns button .prev{
+    margin-right: 3px;
+    font-size: 17px;
+}
+
+form .page .btns button .next{
+    margin-left: 3px;
+}
