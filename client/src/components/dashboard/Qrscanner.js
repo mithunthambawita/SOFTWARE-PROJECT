@@ -1,5 +1,4 @@
-import React, { useState, useRef } from 'react';
-import { withRouter } from 'react-router-dom';
+import React, { useState } from 'react';
 import './BarCodeScanner.css';
 import CustomerSidebar from './CustomerSidebar';
 import QrReader from 'react-qr-reader';
@@ -11,7 +10,6 @@ import { createPayment } from '../../actions/billpay';
 
 // Add comment t ocheck the githup1
 const Qrscanner = ({ createPayment }) => {
-  const qrRef = useRef(null);
   const [description, setScanResultWebCam] = useState('');
   const [formData, setFormData] = useState({
     billAmount: '',

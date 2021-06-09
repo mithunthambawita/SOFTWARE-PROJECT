@@ -32,7 +32,7 @@ export const paypalPayment = (total, discription) => async (dispatch) => {
   console.log(body);
   try {
     const res = await axios.post(
-      'http://localhost:4000/api/user/login',
+      '/api/user/login',
       body,
       config
     );

@@ -28,10 +28,16 @@ const EditProfile = ({
       nationalId: loading || !profile.nationalId ? '' : profile.nationalId,
       
     });
-  }, [getCurrentProfile,
-     loading,
+  }, [
+      getCurrentProfile,
+      profile.distric,
+      profile.city,
+      profile.mobileNo,
+      profile.nationalId,
+      loading,
   ]);
 
+  
   const {
     distric,
     city,
@@ -44,7 +50,7 @@ const EditProfile = ({
 
   const onSubmit = (e) => {
     e.preventDefault();
-    createProfile(formData, history);
+    createProfile(formData, history, true);
   };
 
   return (

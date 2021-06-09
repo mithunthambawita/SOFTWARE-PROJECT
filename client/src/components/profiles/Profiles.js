@@ -148,14 +148,7 @@ return loading   ? (
 );
 };     
     
- {/* <div></div>
-            <div>
-                {users.length > 0 ? (
-                    users.map(user => (
-                        <Profileitem key = {user._id}  user = {user} />
-                 ))) :( <h4>No Profiles Found...</h4>)
-                }
-            </div> */}
+ 
 
 Profiles.propTypes = {
     getProfiles: PropTypes.func.isRequired,

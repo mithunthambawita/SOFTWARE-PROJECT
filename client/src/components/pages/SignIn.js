@@ -35,51 +35,49 @@ const {email,passWord} = formData;
 
     return(
       <Fragment>
-      <div className='m-container'>
-        <div className='container'>
-          <header>
-            <div>
-              master.PAY
-              <i class='fas fa-paper-plane' />
+      <div className='log-container'>
+      <div className = 'g-container'>
+        
+            <div className = 'title'>
+              master.PAY LOGIN
+              <i class='fas fa-paper-plane' /> &nbsp;
+              LOGIN
             </div>
-          </header>
-
-          <div className='login'>
-            <i class='fas fa-user-alt'></i>
-          </div>
-          <div className='login'>LOGIN</div>
-
-         
+        <div class="content">
             <form action='#' onSubmit={(e)=>submitHandler(e)}>
-              
-                <div className='field'>
+              <div className = 'user-details'>
+                <div className='input-box'>
+                <span className='details'>Email</span>
                   <input
                     type='email'
+                    placeholder="Email"
                     name='email'
                     value={email}
                     onChange={(e)=>changeHandler(e)}
                   />
-                  <div className='label'>Email</div>
                 </div>
 
-                <div className='field'>
+                <div className='input-box'>
+                <span className='details'>Password</span>
                   <input
                     type='passWord' 
+                    placeholder="Password"
                     name='passWord'
                     value={passWord}
                     onChange={(e)=>changeHandler(e)}
                   />
-                  <div className='label'>Password</div>
                 </div>
                 <p>Don't have an account? <Link to='/sign-up'>Sign Up </Link></p>
 
-                <div className='field'>
+               
+              </div>
+              <div className='field'>
                   <button>LOGIN</button>
                 </div>
-              
             </form>
+            </div>
           </div>
-        </div>
+      </div>
     </Fragment>
     );
     

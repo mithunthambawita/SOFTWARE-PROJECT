@@ -10,9 +10,11 @@ import {
   LOGOUT,
   CLEAR_PROFILE,
   GET_USERS,
-  PROFILE_ERROR
+  PROFILE_ERROR,
 } from './types';
 import setAuthToken from '../utils/setAuthToken';
+
+// var backendLink = 'https://sleepy-coast-33026.herokuapp.com';
 //Load User
 export const loadUser = () => async (dispatch) => {
   if (localStorage.token) {
@@ -20,7 +22,7 @@ export const loadUser = () => async (dispatch) => {
   }
 
   try {
-    const res = await axios.get('http://localhost:4000/api/post');
+    const res = await axios.get('/api/post');
 
     dispatch({
       type: USER_LOADED,
@@ -63,7 +65,7 @@ export const register = ({
   console.log(body);
   try {
     const res = await axios.post(
-      'http://localhost:4000/api/user/register',
+      '/api/user/register',
       body,
       config
     );
@@ -86,8 +88,6 @@ export const register = ({
   }
 };
 
-
-
 //Login User
 export const login = (email, passWord) => async (dispatch) => {
   const config = {
@@ -102,12 +102,10 @@ export const login = (email, passWord) => async (dispatch) => {
   });
   console.log(body);
   try {
-    const res = await axios.post(
-      'http://localhost:4000/api/user/login',
-      body,
-      config
+    const res = await axios.post('/api/user/login', body, config);
+    console.log(
+      'sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss'
     );
-   
     dispatch({
       type: LOGIN_SUCCESS,
       payload: res.data,
@@ -127,31 +125,25 @@ export const login = (email, passWord) => async (dispatch) => {
   }
 };
 
-
 //Get All users
-export const getUsers  = () => async dispatch => {
+export const getUsers = () => async (dispatch) => {
   try {
-     const res = await axios.get('http://localhost:4000/api/user/users');
+    const res = await axios.get('/api/user/users');
 
-     dispatch({
-        type: GET_USERS,
-        payload: res.data
-     });
-
-    
-
+    dispatch({
+      type: GET_USERS,
+      payload: res.data,
+    });
   } catch (err) {
-     dispatch({
-        type: PROFILE_ERROR,
-        payload: {msg: err.response.statusText, status: err.response.status}
-     });
+    dispatch({
+      type: PROFILE_ERROR,
+      payload: { msg: err.response.statusText, status: err.response.status },
+    });
   }
-}  
-
-
+};
 
 //LOGOUT /Clear Profile
-export const logout = () => dispatch => {
-  dispatch({type: CLEAR_PROFILE});
-  dispatch({type: LOGOUT});
+export const logout = () => (dispatch) => {
+  dispatch({ type: CLEAR_PROFILE });
+  dispatch({ type: LOGOUT });
 };

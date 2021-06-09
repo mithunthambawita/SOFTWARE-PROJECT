@@ -1,13 +1,10 @@
-import React, { Fragment, useEffect, Table } from 'react';
+import React, { Fragment, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import Spinner from '../pages/Spinner';
 import { getHistoryById } from '../../actions/billpay';
-import { Link } from 'react-router-dom';
 import { deleteHistory } from '../../actions/billpay';
 import '../Style/Historybill.css';
 import CustomerSidebar from '../dashboard/CustomerSidebar';
-import { black } from 'material-ui/styles/colors';
 
 const Historybill = ({
   getHistoryById,

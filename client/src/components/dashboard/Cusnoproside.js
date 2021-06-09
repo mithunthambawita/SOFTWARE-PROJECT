@@ -1,14 +1,12 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
 import SubMenu from './SubMenu';
 import { IconContext } from 'react-icons/lib';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import * as IoIcons from 'react-icons/io';
-import * as RiIcons from 'react-icons/ri';
 
 
 const Nav = styled.div`
