@@ -1,4 +1,6 @@
 const jwt = require('jsonwebtoken');
+const config = require('config');
+
 
 
 module.exports = function(req, res, next) {
@@ -6,7 +8,7 @@ module.exports = function(req, res, next) {
   if (!token) return res.status(401).json({msg:'No token, authentication denied'});
  
   try {
-    const verified = jwt.verify(token, process.env.TOKEN_SECRET);
+    const verified = jwt.verify(token, config.get('TOKEN_SECRET'));
     req.user = verified.user;
     next();
   } catch (err) {

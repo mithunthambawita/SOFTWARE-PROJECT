@@ -7,7 +7,6 @@ const jwt = require('jsonwebtoken');
 const gravatar = require('gravatar');
 const { check, validationResult } = require('express-validator');
 const config = require('config');
-// const {registerValidation , loginValidation} = require('../validation');
 
 //register user
 router.post(
@@ -80,21 +79,22 @@ router.post(
     }
 
     //creat and assign token
-    const payload = {
-      user: {
-        _id: user._id,
-      },
-    };
+    //creat and assign token
+  const payload = {
+    user: {
+      _id: user._id,
+    },
+  };
 
-    const token = jwt.sign(
-      payload,
-      process.env.TOKEN_SECRET,
-      { expiresIn: 3600000 },
-      (err, token) => {
-        if (err) throw err;
-        res.json({ token });
-      }
-    );
+  const token = jwt.sign(
+    payload,
+    config.get('TOKEN_SECRET'),
+    { expiresIn: 3600000 },
+    (err, token) => {
+      if (err) throw err;
+      res.json({ token });
+    }
+  );
   }
 );
 
