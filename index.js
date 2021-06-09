@@ -15,7 +15,6 @@ const testpost = require('./routes/testpost');
 const profile = require('./routes/profile');
 const payment = require('./routes/payment');
 const billpay = require('./routes/billpay');
-const { debug } = require('console');
 
 dotenv.config();
 
@@ -41,9 +40,8 @@ if (process.env.NODE_ENV === 'production') {
   app.get('*', (req, res) => {
     res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
   });
-  debug.log('heroku connected');
 }
 
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => console.log(`Server up and running on port ${PORT}`));

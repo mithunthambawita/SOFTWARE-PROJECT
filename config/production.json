@@ -1,5 +1,5 @@
  {
     "DB_CONNECT" : " mongodb+srv://mithun:mithun@cluster0.a3a15.mongodb.net/test?retryWrites=true&w=majority",
-    "TOKEN_SECRET" : "hthfdsers",
-    "PORT" : "4000"
+    "TOKEN_SECRET" : "hthfdsers"
+ 
 }
