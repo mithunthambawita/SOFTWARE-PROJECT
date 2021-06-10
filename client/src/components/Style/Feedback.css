@@ -7,7 +7,8 @@
 }
 
 .m-container2{
- 
+    background-image: url('../../components/images/img-20.jpg');
+    background-repeat: no-repeat; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -95,6 +96,7 @@
 }
 
 .form-outer form .page .field .label{ 
+    pointer-events: none;
     position: absolute;
     left: 12px;
     top: calc(40% + 5px);

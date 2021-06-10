@@ -1,4 +1,150 @@
 *{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+}
+
+.user-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 6px 20px rgba(183, 190, 185, 0.521);
+    -webkit-filter: drop-shadow(10px 6px 20px rgba(134, 134, 134, 0.274));
+    filter: drop-shadow(10px 6px 20px rgba(128, 128, 128, 0.281));
+    background-image: url('../../components/images/img-24.jpg');
+    background-repeat: no-repeat;}
+
+.u-container{
+  max-width: 500px;
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgb(0 0 0);
+}
+
+
+.u-container .u-cont-title .u-title{
+  font-size: 25px;
+  font-weight: 700;
+  position: relative;
+}
+
+.u-container .u-title::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  }
+
+  .u-container form .u-details{
+   justify-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+  }
+
+  form .u-details .u-input-box{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+  }
+
+  form .u-input-box span.u-details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+
+  form .u-details .fieldCom{
+    margin-bottom: 15px;
+    justify-content: center;
+    justify-items: center;
+    width: calc(100% - 20px);
+    height: 40px;
+    border-radius: 8px;
+    box-shadow: 0 6px 20px rgba(59, 52, 52, 0.521);
+    -webkit-filter: drop-shadow(10px 6px 20px rgba(134, 134, 134, 0.274));
+    filter: drop-shadow(10px 6px 20px rgba(128, 128, 128, 0.281));
+  }
+
+  .u-details .u-input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+  }
+
+  .u-details .u-input-box input:focus,
+  .u-details .u-input-box input:valid{
+    border-color: #9b59b6;
+  }
+
+  form .u-field{
+    height: 45px;
+    margin: 25px 0px ;
+  }
+
+  form .u-field button{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #124121;  
+  }
+
+  form .u-field button:hover{
+    /* transform: scale(0.99); */
+    background:  #207c30;    }
+  
+ @media  (max-width: 584px){
+        .u-container{
+         max-width: 100%;
+       }
+    }
+
+    form .u-details .u-input-box{
+        margin-bottom: 15px;
+        width: 100%;
+      }
+
+      .u-content form .u-details{
+        max-height: 500px;
+        overflow-y: scroll;
+      }
+
+      .u-details::-webkit-scrollbar{
+        width: 5px;
+      }
+
+      @media(max-width: 459px){
+        .u-container .u-content .category{
+          flex-direction: column;
+        }
+      }
+
+
+
+
+
+/* *{
   
     margin: 0;
     padding: 0;
@@ -17,12 +163,9 @@
 .m-container::after {
     content: "";
     opacity: 0.8;
-    /*background: url('../images/img-12.jpg') no-repeat fixed top;*/
     filter: blur(8px);
     -webkit-filter: blur(8px);
     height: 100%;
-    /* also change the blend mode to what suits you, from darken, to other 
-    many options as you deem fit*/
     background-size: cover;
     top: 0;
     left: 0;
@@ -182,4 +325,4 @@ form .page .btns button .prev{
 
 form .page .btns button .next{
     margin-left: 3px;
-}
+} */

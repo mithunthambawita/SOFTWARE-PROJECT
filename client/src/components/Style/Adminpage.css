@@ -6,17 +6,18 @@
 }
 
 .admin-container{ 
-    min-height: 100vh;
+    min-height: 110vh;
     padding-left: 250px;
     display: flex;
     align-items: center;
     justify-content: center; 
     flex-wrap: wrap;
+    margin-top: -100px;
 }
 
 .ad-container{
-    background-image: url('../../components/images/img-10.jpg');
-    background-repeat: no-repeat;
+    /* background-image: url('../../components/images/img-10.jpg');
+    background-repeat: no-repeat; */
     padding: 50px 35px 10px 35px;
     
 }

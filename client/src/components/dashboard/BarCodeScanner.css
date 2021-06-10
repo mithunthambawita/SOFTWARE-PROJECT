@@ -28,7 +28,7 @@
   font-size: 35px;
   font-weight: 600;
   margin: 0 60px 30px 30px;
-  background:linear-gradient(180deg,rgb(216, 121, 121) 0%, rgb(230, 187, 187) 100%);
+  background: linear-gradient(180deg,#2f5072 0%, #4d6c8b 100%);
  -webkit-filter: drop-shadow(10px 6px 20px rgba(134, 134, 134, 0.274));
   filter: drop-shadow(10px 6px 20px rgba(128, 128, 128, 0.281));
 }
@@ -59,7 +59,7 @@
 form .field-btn button{
   width:30%;
   height: 50px;
-  background:linear-gradient(180deg,rgb(216, 121, 121) 0%, rgb(230, 187, 187) 100%);
+  background: linear-gradient(180deg,#2f5072 0%, #4d6c8b 100%);
   outline-style: auto;
   border-radius: 5px;
   color: rgb(24, 20, 20);
@@ -73,7 +73,7 @@ form .field-btn button{
 }
 
 form .field-btn button:hover{
-  background: rgb(34, 32, 32);
+  background: linear-gradient(180deg,#889bad 0%, #5f6a75 100%);
   color: rgb(255, 255, 255);
 }
 

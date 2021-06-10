@@ -9,11 +9,21 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import * as IoIcons from 'react-icons/io';
 import * as RiIcons from 'react-icons/ri';
+import { deleteAccount } from '../../actions/profile';
 
+
+// const Nav = styled.div`
+//   background: linear-gradient(180deg,#2f5072 0%, #052647 100%);
+//   height: 40px;
+//   display: flex;
+//   justify-content: flex-start;
+//   align-items: center;
+  
+// `;
 
 const Nav = styled.div`
   background:linear-gradient(180deg,rgb(134, 10, 10) 0%, rgb(185, 87, 87) 100%);
-  height: 40px;
+  height: 100px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -30,7 +40,8 @@ const NavIcon = styled(Link)`
 `;
 
 const SidebarNav = styled.nav`
-  background: linear-gradient(180deg,rgb(134, 10, 10) 0%, rgb(185, 87, 87) 100%);
+  background-color:#1A2D40;
+  background: linear-gradient(180deg,#2f5072 0%, #052647 100%);
   width: 250px;
   height: 100vh;
   display: flex;
@@ -47,9 +58,9 @@ const SidebarWrap = styled.div`
 `;
 
 const CustomerSidebar = ({ auth,  profile: {profile:{user: {_id}}} } ) => {
-  const [sidebar, setSidebar] = useState(false);
+  const [CustomerSidebar] = useState(false);
 
-  const showSidebar = () => setSidebar(!sidebar);
+  // const showSidebar = () => setSidebar(!sidebar);
 
   const SidebarData = [
 
@@ -90,10 +101,9 @@ const CustomerSidebar = ({ auth,  profile: {profile:{user: {_id}}} } ) => {
     },
     {
       title: 'Delete Account',
-      path: '/Delete Account',
+      path: '/main-menu',
+      click : () => deleteAccount(),
       icon: <AiIcons.AiFillDelete />,
-      
-     
     },
     
   ];
@@ -108,7 +118,7 @@ const CustomerSidebar = ({ auth,  profile: {profile:{user: {_id}}} } ) => {
             <FaIcons.FaBars onClick={showSidebar} />
           </NavIcon>
         </Nav> */}
-        <SidebarNav sidebar={sidebar}>
+        <SidebarNav CustomerSidebar={CustomerSidebar}>
           <SidebarWrap>
             <NavIcon to='#'>
               {/* <AiIcons.AiOutlineClose onClick={showSidebar} /> */}

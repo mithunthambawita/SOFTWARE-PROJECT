@@ -54,14 +54,13 @@ const EditProfile = ({
   };
 
   return (
-    <div className='m-container'>
-      <div className='container'>
+    <div className='editpro-container'>
+        <div className='editcontainer'>
         <header>Edit Your Profile</header>
-        <div className='form-outer'>
+        <div className='editproform-outer'>
           <form action='#' onSubmit={(e) => onSubmit(e)}>
             <div className='page'>
-              <div className='field'>
-                <select
+            <div className='editprofield'>                <select
                   name='distric'
                   value={distric}
                   onChange={(e) => onChange(e)}
@@ -93,38 +92,36 @@ const EditProfile = ({
                   <option value='Trincomalee'>Trincomalee</option>
                   <option value='Vavuniya'>Vavuniya</option>
                 </select>
+                <div className='editlabel'>District</div>
               </div>
-              <div className='field'>
-                <input
+              <div className='editprofield'>                <input
                   type='text'
                   name='city'
                   value={city}
                   onChange={(e) => onChange(e)}
                 />
-                <div className='label'>City</div>
+                <div className='editlabel'>City</div>
               </div>
-              <div className='field'>
-                <input
+              <div className='editprofield'>                <input
                   type='text'
                   name='mobileNo'
                   value={mobileNo}
                   onChange={(e) => onChange(e)}
                 />
-                <div className='label'>Mobile No</div>
+                <div className='editlabel'>Mobile No</div>
               </div>
 
-              <div className='field'>
-                <input
+              <div className='editprofield'>                <input
                   type='text'
                   name='nationalId'
                   value={nationalId}
                   onChange={(e) => onChange(e)}
                 />
-                <div className='label'>National ID</div>
+                <div className='editlabel'>National ID</div>
               </div>
 
              
-              <div className='field btns'>
+              <div className='editprofield-btns'>
                 <Link to=''>
                   <button className='back-1 prev'>Back</button>
                 </Link>

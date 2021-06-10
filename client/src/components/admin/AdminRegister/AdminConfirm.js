@@ -50,17 +50,17 @@ const AdminConfirm  = (props) => {
   //  };
 
 return(
-  <div className='com-container'>
-  <div className='cm-container'>
-    <header>
-      master.PAY
-      <i class='fas fa-paper-plane' />
-    </header>
-    <div className='form-outer'>
+  <div className='user-container'>
+  <div className='u-container'>
+  <div className = 'u-cont-title'>
+      <div className = 'u-title'>
+        Confirm Your Information            
+      </div>
+   </div> 
+
+     <div className='u-content'>
       <form action='#'>
-        <div className='page'>
-          <div className='titleCom'>Account Confirmation</div>
-          <div className = 'formOut'>
+        <div className='u-details'>
             <div className= 'fieldCom'>First name    :{firstName}</div>
             <div className= 'fieldCom'>Last name     :{lastName}</div>
             <div className= 'fieldCom'>Mobile number :{mobileNumber}</div>
@@ -69,17 +69,23 @@ return(
             <div className= 'fieldCom'>User name     :{userName}</div>
             <div className= 'fieldCom'>Password      :{passWord}</div>
             <div className= 'fieldCom'>Confirm password :{confirmPassWord}</div>
-          </div>
-        
-          <div className='field btns'>
-            <button className='back-1 prev' onClick={e=>back(e)}>
-              Back
-            </button>
+        </div>
+
+        <div className='u-field'>
+           
             <button className='next-1 next' onClick={(e)=>Continue(e)}>
               Confirm
             </button>
           </div>
-        </div>
+
+        
+          <div className='u-field'>
+            <button className='back-1 prev' onClick={e=>back(e)}>
+              Back
+            </button>
+           
+          </div>
+
       </form>
     </div>
   </div>

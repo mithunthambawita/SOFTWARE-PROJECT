@@ -45,7 +45,8 @@ const SubMenu = ({ item }) => {
 
   return (
     <>
-      <SidebarLink to={item.path} onClick={item.subNav && showSubnav}>
+    <Link onClick={item.click}  style={{ textDecoration: 'none' }} >
+    <SidebarLink to={item.path} onClick={(item.subNav && showSubnav)}  >
         <div>
           {item.icon}
           <SidebarLabel>{item.title}</SidebarLabel>
@@ -58,10 +59,11 @@ const SubMenu = ({ item }) => {
             : null}
         </div>
       </SidebarLink>
+      </Link>
       {subnav &&
         item.subNav.map((item, index) => {
           return (
-            <DropdownLink to={item.path} key={index}>
+            <DropdownLink to={item.path} key={index} >
               {item.icon}
               <SidebarLabel>{item.title}</SidebarLabel>
             </DropdownLink>

@@ -30,70 +30,79 @@ class AdminAccount extends Component  {
 
     const { values, handleChange } = this.props;
     return (
-      <div className='m-container'>
-        <div className='container'>
-          <header>
-            master.PAY
-            <i class='fas fa-paper-plane' />
-          </header>
-          <div className='form-outer'>
-            <form action='#'>
-              <div className='page'>
-                <div className='title'>Account Informations</div>
-
-                <div className='field'>
-                  <input
-                    type='text'
-                    required
-                    onChange={handleChange('email')}
-                    defaultValue={values.email}
-                  />
-                  <div className='label'>Email Address</div>
-                </div>
-                <div className='field'>
-                  <input
-                    type='text'
-                    required
-                    onChange={handleChange('userName')}
-                    defaultValue={values.userName}
-                  />
-                  <div className='label'>User Name</div>
-                </div>
-                <div className='field'>
-                  <input
-                    type='Password'
-                    required
-                    onChange={handleChange('passWord')}
-                    defaultValue={values.passWord}
-                  />
-                  <div className='label'>
-                    Passwaord&nbsp;&nbsp;&nbsp;
-                    <i class='fas fa-unlock-alt'></i>
-                  </div>
-                </div>
-                <div className='field'>
-                  <input
-                    type='Password'
-                    required
-                    onChange={handleChange('confirmPassWord')}
-                    defaultValue={values.confirmPassWord}
-                  />
-                  <div className='label'>Confirm Passwaord</div>
-                </div>
-
-                <div className='field btns'>
-                  <button className='back-1 prev' onClick={this.back}>
-                    Back
-                  </button>
-                  <button className='next-1 next' onClick={this.continue}>
-                    Next
-                  </button>
-                </div>
-              </div>
-            </form>
+      <div className='user-container'>
+      <div className='u-container'>
+      <div className = 'u-cont-title'>
+          <div className = 'u-title'>
+            Account Information            
           </div>
+       </div> 
+       <div className='u-content'>
+          <form action='#'>
+            <div className='u-details'>
+          <div className='u-input-box'>
+            <span className='u-details'>Email Address</span>
+                <input
+                  type='text'
+                  placeholder="Email Address"
+                  required
+                  onChange={handleChange('email')}
+                  defaultValue={values.email}
+                />
+          </div>
+
+          <div className='u-input-box'>
+            <span className='u-details'>User Name</span>
+                <input
+                  type='text'
+                  placeholder="User Name"
+                  required
+                  onChange={handleChange('userName')}
+                  defaultValue={values.userName}
+                />
+          </div>
+
+          <div className='u-input-box'>
+            <span className='u-details'>Passwaord  <i class='fas fa-unlock-alt'></i></span>
+                <input
+                  type='Password'
+                  placeholder="Passwaord"
+                  required
+                  onChange={handleChange('passWord')}
+                  defaultValue={values.passWord}
+                />
+          </div>
+
+          <div className='u-input-box'>
+            <span className='u-details'>Confirm Passwaord</span>
+                <input
+                  type='Password'
+                  placeholder="Confirm Passwaord"
+                  required
+                  onChange={handleChange('confirmPassWord')}
+                  defaultValue={values.confirmPassWord}
+                />
+          </div>
+
+            
+            </div>
+
+            <div className='u-field'>
+              
+                <button  onClick={this.continue}>
+                  Next
+                </button>
+              </div>
+              <div className='u-field'>
+                <button  onClick={this.back}>
+                  Back
+                </button>
+               
+              </div>
+          </form>
         </div>
       </div>
+    </div>
     );
   }
 }

@@ -26,29 +26,18 @@ const  Item = ({
       
   return (
     <div className='admin-cards'>
-      <div className='admin-cards__container'>
-        <div className='admin-cards__wrapper'>
-          <ul className='admin-cards__items'>
-            <Adminitem
-              src='images/img-17.png'
-              text='Save your bill details '
-              label='Payment history'
-            />
-            <Adminitem
-              src='images/img-14.jpg'
-              text= {'Check your expenses'}
-              label='Adventure'
-            />
-          
-            <Adminitem
-              src='images/img-16.jpeg'
-              text='Enjoy the  offers '
-              label='Offers & pramotios'
-            />
-          </ul>
-        </div>
+    <div className='admin-cards__container'>
+      <div className='admin-cards__wrapper'>
+        <ul className='admin-cards__items'>
+          <Adminitem
+            src='images/img-11.jpg'
+            text= 'Check your registered customers'
+            label='Registration'
+          />
+        </ul>
       </div>
     </div>
+  </div>
   );
 }
 

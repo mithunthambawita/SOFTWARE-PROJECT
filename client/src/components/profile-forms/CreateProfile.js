@@ -38,18 +38,6 @@ const CreateProfile = ({isAuthenticated,
      
   }
 
- 
-    // if(isAuthenticated){
-    //   if (user.role === "customer")
-    //     return <Redirect to = '/main-menu'/>;
-    //   else if (user.role === "admin")
-    //     return <Redirect to = '/admin-page'/>;
-    //  };
-  
-  
-
- 
-
   return (
     <div className='m-container'>
       <div className='container'>

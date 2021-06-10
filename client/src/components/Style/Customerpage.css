@@ -6,7 +6,7 @@
 }
 
 .customer-container{ 
-    min-height: 100vh;
+    min-height: 20vh;
     padding: 10px 10px 100px 10px;
     display: flex;
     align-items: center;
@@ -14,12 +14,12 @@
     flex-wrap: wrap;
 }
 
-.cu-container{
-    /* background-image: url('../../components/images/img-13.jpg');
-    background-repeat: no-repeat; */
+/* .cu-container{
+    background-image: url('../../components/images/img-13.jpg');
+    background-repeat: no-repeat;
     padding: 50px 35px 10px 35px;
     
-}
+} */
 
 /* .ad-container header{
     outline-style: auto;

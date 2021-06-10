@@ -10,6 +10,8 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import * as IoIcons from 'react-icons/io';
 import * as RiIcons from 'react-icons/ri';
+import { deleteAccount } from '../../actions/profile';
+
 
 
 // const Nav = styled.div`
@@ -21,6 +23,15 @@ import * as RiIcons from 'react-icons/ri';
   
 // `;
 
+const Nav = styled.div`
+  background:linear-gradient(180deg,rgb(134, 10, 10) 0%, rgb(185, 87, 87) 100%);
+  height: 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  
+`;
+
 const NavIcon = styled(Link)`
   margin-left: 1rem;
   font-size: 2rem;
@@ -31,7 +42,8 @@ const NavIcon = styled(Link)`
 `;
 
 const SidebarNav = styled.nav`
-  background: linear-gradient(180deg,rgb(134, 10, 10) 0%, rgb(185, 87, 87) 100%);
+  background-color:#1A2D40;
+  background: linear-gradient(180deg,#2f5072 0%, #052647 100%);
   width: 250px;
   height: 100vh;
   display: flex;
@@ -95,10 +107,8 @@ const Sidebarnopro = ({ auth, } ) => {
     },
     {
       title: 'Delete Account',
-      path: '/Delete Account',
+      click : () => deleteAccount(),
       icon: <AiIcons.AiFillDelete />,
-      
-     
     },
     
   ];

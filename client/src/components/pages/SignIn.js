@@ -37,12 +37,13 @@ const {email,passWord} = formData;
       <Fragment>
       <div className='log-container'>
       <div className = 'g-container'>
-        
+        <div className = 'cont-title'>
             <div className = 'title'>
               master.PAY LOGIN
               <i class='fas fa-paper-plane' /> &nbsp;
               LOGIN
             </div>
+       </div> 
         <div class="content">
             <form action='#' onSubmit={(e)=>submitHandler(e)}>
               <div className = 'user-details'>

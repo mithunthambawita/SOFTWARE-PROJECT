@@ -5,6 +5,7 @@ import { getHistoryById } from '../../actions/billpay';
 import { deleteHistory } from '../../actions/billpay';
 import '../Style/Historybill.css';
 import CustomerSidebar from '../dashboard/CustomerSidebar';
+import Sidebar from '../admin/Sidebar';
 
 const Historybill = ({
   getHistoryById,
@@ -19,7 +20,7 @@ const Historybill = ({
   console.log(billpay);
   return (
     <Fragment>
-     
+      { auth.user.role === 'customer' ? (<CustomerSidebar/>):(<Sidebar/>)  }
       {billpay === null || loading ? (
         <Fragment>
           {/* <Spinner /> */}
@@ -56,7 +57,7 @@ const Historybill = ({
                     style={{
                       border: '1px solid black',
                       borderCollapse: 'collapse',
-                      backgroundColor:'rgb(216, 121, 121)',
+                      backgroundColor:'lightgreen',
                     }}
                   >
                    Date & Time
@@ -65,7 +66,7 @@ const Historybill = ({
                     style={{
                       border: '1px solid black',
                       borderCollapse: 'collapse',
-                      backgroundColor:'rgb(216, 121, 121)',
+                      backgroundColor:'darkgreen',
                     }}
                   >
                     Descripton
@@ -74,7 +75,7 @@ const Historybill = ({
                     style={{
                       border: '1px solid black',
                       borderCollapse: 'collapse',
-                      backgroundColor:'rgb(216, 121, 121)',
+                      backgroundColor:'lightgreen',
                     }}
                   >
                      Bill Amount
@@ -112,7 +113,7 @@ const Historybill = ({
                           border: '1px solid black',
                           borderCollapse: 'collapse',
                           height: '80px',
-                          backgroundColor:'#fed9b7',
+                          backgroundColor:'#9db3a6',
                         }}
                       >
                         {' '}

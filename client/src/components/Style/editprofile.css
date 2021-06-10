@@ -1,21 +1,40 @@
 .editpro-container{
-    height: 900px;
-
+    height: 600px;
+    background-image: url('../../components/images/img-19.jpg');
+    background-repeat: no-repeat; 
+    background-position: right;
+    
 }
 
 .editcontainer{
-    margin-top: 50px;
+    margin-top: 80px;
     margin-left: 650px;
     font-size: 30px;
     font-weight: 600;
-    color: darkred;
+    color: rgb(5, 65, 17);
+   
+    
 }
+
+/* .editcontainer .profile{
+    background-image: url('../../components/images/img-17.png');
+    background-repeat: no-repeat;
+    outline: auto;
+    margin-top: 200px;
+    margin-left: 500px;
+    max-width: 2000px;
+    max-height: 1000px;
+} */
+
+/* .editproform-outer{
+    margin-top: 80px;
+} */
 
 .editprofield{
     font-weight: 900;
     font-size: 20px;
-    margin-top: 45px;
-    margin-left: 650px;
+    margin-top: 50px;
+    margin-left: 850px;
     /* outline-style: auto; */
     shape-outside: -moz-radial-gradient(5px);
     width: 350px;
@@ -28,11 +47,12 @@
     /* padding: 40px 35px 40px 35px; */
     text-align: center;
     
+  
 }
 
-.label{
-    font-weight: 900;
-    font-size: 20px;
+.editlabel{
+    font-weight: 700;
+    font-size: 15px;
     margin-top: -30px;
     margin-left: -250px;
     shape-outside: -moz-radial-gradient(5px);
@@ -48,7 +68,7 @@
 
 .editprofield-btns button{
     /* outline: auto; */
-    background:linear-gradient(180deg,rgb(161, 74, 74) 0%, rgb(230, 187, 187) 100%);
+    background: linear-gradient(180deg,#2f5072 0%, #052647 100%);
     outline-color: black;
     color: rgb(0, 0, 0);
     /* text-align: center; */
@@ -70,7 +90,7 @@
   } */
 
 .editprofield-btns button:hover{
-  background:linear-gradient(180deg,rgb(160, 75, 75) 0%, rgb(230, 187, 187) 100%);
+  background: linear-gradient(180deg,#889bad 0%, #5f6a75 100%);
   color:  white;
   } 
 

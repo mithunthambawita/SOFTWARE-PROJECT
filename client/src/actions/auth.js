@@ -103,9 +103,6 @@ export const login = (email, passWord) => async (dispatch) => {
   console.log(body);
   try {
     const res = await axios.post('/api/user/login', body, config);
-    console.log(
-      'sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss'
-    );
     dispatch({
       type: LOGIN_SUCCESS,
       payload: res.data,

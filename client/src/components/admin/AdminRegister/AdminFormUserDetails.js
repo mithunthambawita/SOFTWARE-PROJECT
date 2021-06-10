@@ -11,63 +11,67 @@ export class AdminFormUserDetails extends Component {
   render() {
     const { values, handleChange } = this.props;
     return (
-      <div className='m-container'>
-        <div className='container'>
-          <header>
-            master.PAY
-            <i class='fas fa-paper-plane' />
-          </header>
-          <div className='form-outer'>
+      <div className='user-container'>
+        <div className='u-container'>
+        <div className = 'u-cont-title'>
+            <div className = 'u-title'>
+            Personal Data
+            </div>
+       </div> 
+          <div className='u-content'>
             <form action='#'>
-              <div className='page'>
-                <div className='title'>Personal Data</div>
-                <div className='field'>
+              <div className='u-details'>
+              <div className='u-input-box'>
+              <span className='u-details'>First Name</span>
                   <input
                     type='text'
+                    placeholder="First Name"
                     required
                     onChange={handleChange('firstName')}
                     defaultValue={values.firstName}
                   />
-                  <div className='label'>First Name</div>
-                </div>
+              </div>
 
-                <div className='field'>
+              <div className='u-input-box'>
+              <span className='u-details'>Last Name</span>
                   <input
                     type='text'
+                    placeholder="Last Name"
                     required
                     onChange={handleChange('lastName')}
                     defaultValue={values.lastName}
                   />
-                  <div className='label'>Last Name</div>
                 </div>
 
-                <div className='field'>
+                <div className='u-input-box'>
+                <span className='u-details'>Mobile Number</span>
                   <input
                     type='text'
+                    placeholder="Mobile Number"
                     required
                     onChange={handleChange('mobileNumber')}
                     defaultValue={values.mobileNumber}
                   />
-                  <div className='label'>Mobile Number</div>
                 </div>
 
-                <div className='field'>
+                <div className='u-input-box'>
+                <span className='u-details'>Role</span>
                   <input
                     type='text'
+                    placeholder="Role"
                     required
                     onChange={handleChange('role')}
                     defaultValue={values.role}
                   />
-                  <div className='label'>Role</div>
                 </div>
 
                 <p>Already have an account? <Link to='/sign-in'>Sign In </Link></p>
-               
+              </div>
 
-                <div className='field'>
+              <div className='u-field'>
                   <button onClick={this.continue}>Next</button>
                 </div>
-              </div>
+
             </form>
           </div>
         </div>

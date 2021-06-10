@@ -1,6 +1,9 @@
 .p-container{
+  height: 100vh;
+  /* display: flex; */
   margin-top: 50px;
   margin-left: 190px;
+  
 }
 
 /* .pcontainer{
@@ -19,6 +22,7 @@
 } */
 
 .pcontainer1{
+  background-color: rgb(212, 227, 230);
   margin-top: 40px;
   margin-left: 200px;
   /* outline-style: auto; */
@@ -26,7 +30,7 @@
   width: 500px;
   height: 450px;
   border-radius: 8px;
-  box-shadow: 0 6px 20px rgba(59, 52, 52, 0.521);
+  box-shadow: 0 6px 20px rgba(52, 53, 59, 0.521);
   -webkit-filter: drop-shadow(10px 6px 20px rgba(134, 134, 134, 0.274));
   filter: drop-shadow(10px 6px 20px rgba(128, 128, 128, 0.281));
   line-height: 50px;
@@ -36,18 +40,21 @@
 }
 
 .pcontainer2{
-  margin-top: -450px;
+  background-image: url('../../components/images/img-15.png');
+  background-repeat: no-repeat;
+  margin-top: -550px;
   margin-left: 950px;
   shape-outside: -moz-radial-gradient(5px);
-  width: 200px;
-  height: 450px;
-  border-radius: 8px;
+  width: 300px;
+  height: 300px;
+  border-radius: 40px;
   box-shadow: 0 6px 20px rgba(59, 52, 52, 0.521);
   -webkit-filter: drop-shadow(10px 6px 20px rgba(134, 134, 134, 0.274));
   filter: drop-shadow(10px 6px 20px rgba(128, 128, 128, 0.281));
   line-height: 50px;
   padding: 40px 35px 40px 35px;
   text-align: left;
+  align-items: center;
 }
 
 .field-name{
@@ -56,6 +63,7 @@
   box-shadow: 0 6px 20px rgba(59, 52, 52, 0.521);
   -webkit-filter: drop-shadow(10px 6px 20px rgba(134, 134, 134, 0.274));
   filter: drop-shadow(10px 6px 20px rgba(128, 128, 128, 0.281));
+  /* background-color:rgb(120, 209, 120); */
 }
 
 /* .profile-btn1 {
@@ -78,7 +86,7 @@
 
 .profile-btn2 {
   outline: auto;
-  background:linear-gradient(180deg,rgb(161, 74, 74) 0%, rgb(230, 187, 187) 100%);
+  background: linear-gradient(180deg,#2f5072 0%, #052647 100%);
   outline-color: black;
   color: rgb(0, 0, 0);
   text-align: center;
@@ -100,7 +108,7 @@
 }
 
 .profile-btn2:hover{
-background:linear-gradient(180deg,rgb(160, 75, 75) 0%, rgb(230, 187, 187) 100%);
+background: linear-gradient(180deg,#889bad 0%, #5f6a75 100%);
 color:  white;
 } 
 

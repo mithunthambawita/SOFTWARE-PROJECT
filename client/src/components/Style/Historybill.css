@@ -2,7 +2,7 @@
   margin-top: 10px;
   margin-left: 1230px;
   outline: auto;
-  background-color: rgb(148, 18, 18);
+  background: linear-gradient(180deg,#2f5072 0%, #4d6c8b 100%);
   outline-color: black;
   color: rgb(0, 0, 0);
   text-align: center;
@@ -12,6 +12,6 @@
 }
 
 .profile-btn1:hover {
-  background: rgb(114, 36, 36);
+  background: linear-gradient(180deg,#889bad 0%, #5f6a75 100%);
   color: white;
 }

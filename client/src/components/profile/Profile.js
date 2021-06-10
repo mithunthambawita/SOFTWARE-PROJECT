@@ -6,6 +6,7 @@ import { getProfileById } from "../../actions/profile";
 import { Link } from "react-router-dom";
 import "../Style/Profile.css";
 import CustomerSidebar from "../dashboard/CustomerSidebar";
+import Sidebar from '../admin/Sidebar';
 
 const Profile = ({
   getProfileById,
@@ -22,7 +23,7 @@ const Profile = ({
         <Spinner />
       ) : (
         <Fragment>
-          <CustomerSidebar/>
+          { auth.user.role === 'customer' ? (<CustomerSidebar/>):(<Sidebar/>)  }
           <div className="p-container">
             <h1>
               <div>
@@ -55,25 +56,11 @@ const Profile = ({
               
               <div className="pcontainer2">
               <p>
-                <ul>
-                  profile photo 
-                  </ul>
-                  <i class="fas fa-user-tie"></i>                      
+                                   
               </p>
               </div>
 
-          {" "}
-          {/* <div className="profile-btn1"> */}
-            {/* <Link
-              to="/main-menu"
-              style={{ textDecoration: "none" }}
-              className="link"
-            >
-              {" "}
-              <i class="fas fa-user-edit"></i>
-              &nbsp;Back To Dashboard{" "}
-            </Link> */}
-          {/* </div> */}
+        
           {auth.isAuthenticated &&
             auth.loading === false &&
             auth.user._id === profile.user._id && (

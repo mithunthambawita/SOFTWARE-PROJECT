@@ -11,20 +11,25 @@
     justify-content: center;
     align-items: center;
     padding: 10px;
-    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    /* background: linear-gradient(135deg, #7ccce4, #2b6777); */
+    box-shadow: 0 6px 20px rgba(183, 190, 185, 0.521);
+    -webkit-filter: drop-shadow(10px 6px 20px rgba(134, 134, 134, 0.274));
+    filter: drop-shadow(10px 6px 20px rgba(128, 128, 128, 0.281));
+    background-image: url('../../components/images/img-22.jpg');
+    background-repeat: no-repeat;
 }
 
-.g-container{
-    max-width: 500px;
-    width: 100%;
-    background-color: #fff;
-    padding: 25px 30px;
-    border-radius: 5px;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+.g-container {
+  max-width: 500px;
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgb(0 0 0);
 }
 
 
-.g-container .title{
+.g-container .cont-title .title{
   font-size: 25px;
   font-weight: 700;
   position: relative;
@@ -38,8 +43,7 @@
     height: 3px;
     width: 30px;
     border-radius: 5px;
-    background: linear-gradient(135deg, #71b7e6, #9b59b6);
-  }
+    background: linear-gradient(135deg, #40833a, #a8c59f);  }
 
   .g-container form .user-details{
    justify-items: center;
@@ -73,8 +77,8 @@
 
   .user-details .input-box input:focus,
   .user-details .input-box input:valid{
-    border-color: #9b59b6;
-  }
+    border-color: #b7e995; 
+   }
 
   form .field{
     height: 45px;
@@ -92,13 +96,12 @@
     letter-spacing: 1px;
     cursor: pointer;
     transition: all 0.3s ease;
-    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    background-color: #124121;  
   }
 
   form .field button:hover{
     /* transform: scale(0.99); */
-    background: linear-gradient(-135deg, #71b7e6, #9b59b6);
-    }
+    background:  #207c30;    }
   
  @media  (max-width: 584px){
         .g-container{

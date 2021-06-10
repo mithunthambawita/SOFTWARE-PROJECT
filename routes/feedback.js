@@ -27,4 +27,22 @@ if(error) return res.status(400).send(error.details[0].message);
   }
 });
 
+//@route    GET api/feedbacks
+//@desc     Get all feedbacks
+//@access   Public
+
+router.get('/feedbacks', async (req, res) => {
+  try {
+    
+    const Feedbacks = await Feedback.find();
+    res.status(200).json(Feedbacks);
+  } catch (err) {
+    console.error(err.message);
+    res.status(500).send('There are no Feedbacks');
+  }
+});
+
+
+
+
 module.exports = router;

@@ -1,5 +1,5 @@
 .navbar {
-  background: linear-gradient(180deg,rgb(134, 10, 10) 0%, rgb(185, 87, 87) 100%);
+  background-color:#1A2D40; 
   height: 80px;
   display: flex;
   justify-content: center;
@@ -8,6 +8,7 @@
   position: sticky;
   top: 0;
   z-index: 999;
+
 }
 
 .navbar-container {
@@ -76,6 +77,8 @@
   text-decoration: none;
   padding: 0.5rem 1rem;
   height: 100%;
+  font-size: 15px;
+  font-weight: 1000;
 }
 
 .nav-links:hover {

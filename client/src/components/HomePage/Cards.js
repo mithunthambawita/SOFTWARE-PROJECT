@@ -9,16 +9,16 @@ function Cards() {
       <div className='cards__container'>
         <div className='cards__wrapper'>
           <ul className='cards__items'>
-            <CardItem
+          <CardItem
               src='images/img-12.jpg'
               text='Pay your bill using QR code with master.PAY'
               label='Easy pay'
             />
 
             <CardItem
-              src='images/img-11.jfif'
-              text='Being safty with master.PAY '
-              label='Safty'
+              src='images/img-11.png'
+              text='Being safe with master.PAY '
+              label='Safety'
             />
           </ul>
 
