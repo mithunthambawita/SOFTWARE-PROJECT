@@ -127,7 +127,6 @@ const Sidebarnopro = ({ auth, } ) => {
           <SidebarWrap>
             <NavIcon to='#'>
               {/* <AiIcons.AiOutlineClose onClick={showSidebar} /> */}
-              <div>mithun</div>
             </NavIcon>
             {SidebarData.map((item, index) => {
               return <SubMenu item={item} key={index} />;

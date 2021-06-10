@@ -39,7 +39,7 @@ const {email,passWord} = formData;
       <div className = 'g-container'>
         <div className = 'cont-title'>
             <div className = 'title'>
-              master.PAY LOGIN
+              master.PAY 
               <i class='fas fa-paper-plane' /> &nbsp;
               LOGIN
             </div>

@@ -1,13 +1,18 @@
-import React, { useState, useEffect } from 'react';
+import React, {Fragment, useState, useEffect } from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { createProfile, getCurrentProfile } from '../../actions/profile';
+import CustomerSidebar from "../dashboard/CustomerSidebar";
+import Sidebar from '../admin/Sidebar';
+import Spinner from "../pages/Spinner";
+
 
 const EditProfile = ({
   profile: { profile, loading },
   createProfile,
   getCurrentProfile,
+  user,
   history,
 }) => {
   const [formData, setFormData] = useState({
@@ -30,10 +35,10 @@ const EditProfile = ({
     });
   }, [
       getCurrentProfile,
-      profile.distric,
-      profile.city,
-      profile.mobileNo,
-      profile.nationalId,
+      // profile.distric,
+      // profile.city,
+      // profile.mobileNo,
+      // profile.nationalId,
       loading,
   ]);
 
@@ -54,14 +59,26 @@ const EditProfile = ({
   };
 
   return (
-    <div className='editpro-container'>
-        <div className='editcontainer'>
-        <header>Edit Your Profile</header>
-        <div className='editproform-outer'>
+    <Fragment>
+       {profile === null || loading ? (
+        <Spinner />
+      ) : (
+    <div className='log-container'>
+    <div className='g-container'>
+    <div className = 'cont-title'>
+            <div className = 'title'>
+             Edit Your Profile
+            </div>
+       </div> 
+       <div className='content'>
           <form action='#' onSubmit={(e) => onSubmit(e)}>
-            <div className='page'>
-            <div className='editprofield'>                <select
+          <div  className = 'user-details'>
+
+              <div className='input-box'> 
+              <span className='details'>Select Your Distric</span>         
+              <select
                   name='distric'
+                  placeholder='Select Your Distric'
                   value={distric}
                   onChange={(e) => onChange(e)}
                 >
@@ -92,48 +109,64 @@ const EditProfile = ({
                   <option value='Trincomalee'>Trincomalee</option>
                   <option value='Vavuniya'>Vavuniya</option>
                 </select>
-                <div className='editlabel'>District</div>
               </div>
-              <div className='editprofield'>                <input
+
+                <div className='input-box'>
+                <span className='details'>city</span>            
+                 <input
                   type='text'
+                  placeholder='city'
                   name='city'
                   value={city}
                   onChange={(e) => onChange(e)}
                 />
-                <div className='editlabel'>City</div>
               </div>
-              <div className='editprofield'>                <input
+
+              <div className='input-box'>
+              <span className='details'>Mobile No</span>        
+              <input
                   type='text'
                   name='mobileNo'
                   value={mobileNo}
                   onChange={(e) => onChange(e)}
                 />
-                <div className='editlabel'>Mobile No</div>
+               
               </div>
 
-              <div className='editprofield'>                <input
+              <div className='input-box'>
+              <span className='details'>National ID</span> 
+                <input
                   type='text'
                   name='nationalId'
                   value={nationalId}
                   onChange={(e) => onChange(e)}
                 />
-                <div className='editlabel'>National ID</div>
               </div>
 
              
-              <div className='editprofield-btns'>
-                <Link to=''>
+            
+            </div>
+
+            <div className='field'>                
+            <Link to=''>
                   <button className='back-1 prev'>Back</button>
                 </Link>
-                <button type='submit' className='next-1 next'>
+              </div>
+
+              <div className='field'>               
+               <button type='submit' className='next-1 next'>
                   Submit
                 </button>
               </div>
-            </div>
+
+
+
           </form>
         </div>
       </div>
     </div>
+      )}
+    </Fragment>
   );
 };
 
@@ -141,10 +174,14 @@ EditProfile.propTypes = {
   createProfile: PropTypes.func.isRequired,
   getCurrentProfile: PropTypes.func.isRequired,
   profile: PropTypes.object.isRequired,
+  auth: PropTypes.object.isRequired,
+  user: PropTypes.object.isRequired,
 };
 
 const mapStateToProps = (state) => ({
   profile: state.profile,
+  auth: state.auth,
+  user: state.auth.user,
 });
 
 export default connect(mapStateToProps, { createProfile, getCurrentProfile })(

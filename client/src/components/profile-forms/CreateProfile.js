@@ -1,13 +1,15 @@
-import React, { useState } from 'react';
+import React, {Fragment, useState } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { createProfile } from '../../actions/profile';
 import {Link,  withRouter} from 'react-router-dom';
-
+import CustomerSidebar from "../dashboard/CustomerSidebar";
+import Sidebar from '../admin/Sidebar';
 
 const CreateProfile = ({isAuthenticated, 
                         createProfile, 
                         history, 
+                        auth,
                         user }) => {
   const [formData, setFormData] = useState({
     image:'',
@@ -39,27 +41,35 @@ const CreateProfile = ({isAuthenticated,
   }
 
   return (
-    <div className='m-container'>
-      <div className='container'>
-        <header>Create Your Profile</header>
-        <div className='form-outer'>
+    <Fragment>
+    <div className='log-container'>
+      <div className='g-container'>
+      <div className = 'cont-title'>
+            <div className = 'title'>
+              Create Your Profile
+            </div>
+       </div> 
+        <div className='content'>
           <form action='#' onSubmit = {e => onSubmit(e)} encType="multipart/form-data">
-            <div className='page'>
+            <div  className = 'user-details'>
 
-            <div className='field'>
+            <div className='input-box'>
+            <span className='details'>Profile Photo</span>
                 <input
+                  placeholder="Profile Photo"
                   type='file'
                   accept=".png, .jpg, .jpeg"
                   name='image'
 
                   onChange={(e) => handlePhoto(e)}
                 />
-                <div className='label'>Profile Photo</div>
               </div>
 
 
-              <div className='field'>
+              <div className='input-box'>
+              <span className='details'>Select Your Distric</span>
                 <select
+                  placeholder='Select Your Distric'
                   name='distric'
                   value={distric}
                   onChange={(e) => onChange(e)}
@@ -92,49 +102,59 @@ const CreateProfile = ({isAuthenticated,
                   <option value='Vavuniya'>Vavuniya</option>
                 </select>
               </div>
-              <div className='field'>
+
+                <div className='input-box'>
+                <span className='details'>city</span>
                 <input
                   type='text'
+                  placeholder='city'
                   name='city'
                   value={city}
                   onChange={(e) => onChange(e)}
                 />
-                <div className='label'>City</div>
               </div>
 
-              <div className='field'>
+              <div className='input-box'>
+              <span className='details'>Mobile No</span>
                 <input
                   type='text'
+                  placeholder='Mobile No'
                   name='mobileNo'
                   value={mobileNo}
                   onChange={(e) => onChange(e)}
                 />
-                <div className='label'>Mobile No</div>
               </div>
 
-              <div className='field'>
+              <div className='input-box'>
+              <span className='details'>National ID</span>
                 <input
                   type='text'
                   name='nationalId'
                   value={nationalId}
                   onChange={(e) => onChange(e)}
                 />
-                <div className='label'>National ID</div>
               </div>
 
              
-              <div className='field btns'>
+            
+            </div>
+
+            <div className='field'>
                   <Link to = '/main-menu'>
                 <button  className='back-1 prev'>Back</button>
                 </Link>
-                 
+            </div>
+
+              <div className='field'>
                 <button   className='next-1 next'>Submit</button>
               </div>
-            </div>
+
           </form>
         </div>
       </div>
     </div>
+    </Fragment>
+
   );
 };
 

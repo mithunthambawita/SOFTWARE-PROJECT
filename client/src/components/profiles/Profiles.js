@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import Spinner from '../pages/Spinner';
 import { getProfiles } from '../../actions/profile';
 import { getUsers } from '../../actions/auth';
-
+import Sidebar from '../admin/Sidebar';
 
 const Profiles = ({getProfiles,
                    getUsers,
@@ -26,7 +26,14 @@ return loading   ? (
     </Fragment> 
     ): (
     <Fragment>
-         { ( <div>
+      <Sidebar/>
+         { ( <div
+           style={{
+           
+            marginLeft: '200px',
+           
+          }}
+         >
             <table
               style={{
                 width: '90%',
@@ -53,6 +60,7 @@ return loading   ? (
                     style={{
                       border: '1px solid black',
                       borderCollapse: 'collapse',
+                      backgroundColor:'darkgreen',
                     }}
                   >
                    Reg Date
@@ -61,22 +69,17 @@ return loading   ? (
                     style={{
                       border: '1px solid black',
                       borderCollapse: 'collapse',
+                      backgroundColor:'lightgreen',
                     }}
                   >
                     Full Name
                   </th>
+                
                   <th
                     style={{
                       border: '1px solid black',
                       borderCollapse: 'collapse',
-                    }}
-                  >
-                   Email
-                  </th>
-                  <th
-                    style={{
-                      border: '1px solid black',
-                      borderCollapse: 'collapse',
+                      backgroundColor:'darkgreen',
                     }}
                   >
                    Mobile Number
@@ -118,14 +121,7 @@ return loading   ? (
                       </td>
 
                       
-                      <td
-                        style={{
-                          border: '1px solid black',
-                          borderCollapse: 'collapse',
-                        }}
-                      >
-                        {profiles.email}
-                      </td>
+                     
 
                       <td
                         style={{
